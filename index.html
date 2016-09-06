@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<script src="public/scripts/jquery-2.2.3.min.js"></script>
+		<script src="public/scripts/player.js"></script>
+		<link rel="stylesheet" type="text/css" href="public/styles/reset.css">
+		<link rel="stylesheet" type="text/css" href="public/styles/font-awesome-4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="public/styles/style.css">
+
+		<title>singletrack - psplayer</title>
+	</head>
+	<body>
+		<!-- audio player -->
+		<div class="lecteur_container" id='lecteurAudio'>
+			<audio id="audio" src="#" class="mp3"></audio>
+
+			<div id='textUrl'>
+				no file
+			</div>
+			<div class="playerNav">
+				<span id="tpsAvant">00:00</span>
+				<button type='button' id='btn_play' class='player_btn'>
+					<i class="fa fa-play" aria-hidden="true"></i>
+				</button>
+				<button type='button' id='btn_pause' class='player_btn'>
+					<i class="fa fa-pause" aria-hidden="true"></i>
+				</button>
+				<button type='button' id='btn_stop' class='player_btn'>
+					<i class="fa fa-stop" aria-hidden="true"></i>
+				</button>
+				<span id="tpsApres">00:00</span>
+			</div>
+			
+			<div class="timeline" id="timeline">
+				<div class="cursor" id='cursor'></div>
+			</div>
+			<div class='playerLoop'>
+				<button type="button" id="btn_repereA">
+					[ A
+				</button>
+				<span id="repereA">
+					00:00
+				</span>
+				<button type='button' id='btnPlayLoop' class='playLoopOff'>
+					play loop
+				</button>
+				<span id="repereB">
+					00:00
+				</span>
+				<button type="button" id="btn_repereB">
+					B ]
+				</button>
+			</div>
+		</div>
+		<br>
+		<br>
+
+		<!-- musics -->
+		<div class='btn_lecteur' data-url='public/music/Armstrong-Karaoke.mp3'>
+			Armstrong-Karaoke
+		</div>
+		<br>
+		<div class='btn_lecteur' data-url='public/music/Happy_day.mp3'>
+			Happy day
+		</div>
+	</body>
+</html>
